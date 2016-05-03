@@ -1,1 +1,1 @@
-"use strict";console.log("'Allo 'Allo!");
+"use strict";var CROSS_TURN=!0;$(document).ready(function(){$(".field-cell").click(function(){console.log(this);var s=$(this);return CROSS_TURN?(s.hasClass("cross")&&s.removeClass("cross"),s.addClass("circle")):(s.hasClass("circle")&&s.removeClass("circle"),s.addClass("cross")),CROSS_TURN=!CROSS_TURN,!1})});
